@@ -65,25 +65,6 @@
                 router-link(to="/relation/carrier") 4
               li.da
                 router-link(to="/item") 24
-    el-card(style="margin: 20px 20px; font-size: 14px")
-      div(slot="header")
-        span 发展历程
-      el-timeline
-        el-timeline-item(placement="top" timestamp="2018年")
-          el-card
-            h4 参与京东服务市场商品分析应用开发，参与京东服务市场会员积分应用开发
-        el-timeline-item(placement="top" timestamp="2019年")
-          el-card
-            h4 参与京东服务市场商品搬家应用开发，参与京东服务市场商品搬家应用开发，参与拼多多服务市场订单应用开发
-        el-timeline-item(placement="top" timestamp="2020年")
-          el-card
-            h4 所参与开发的拼多多订单应用排名服务市场类目第一，开始快手服务市场订单应用开发
-        el-timeline-item(placement="top" timestamp="2021年")
-          el-card
-            h4 日处理拼多多订单200万条，开始美团、饿了么应用市场应用开发
-        el-timeline-item(placement="top" timestamp="2022年")
-          el-card
-            h4 累计服务10万+电商平台店铺、5万+外卖店铺。开始抖音、淘宝服务市场订单应用开发，开源ruoyi-wms
 </template>
 
 <script>

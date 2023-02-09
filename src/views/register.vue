@@ -59,10 +59,6 @@
         </div>
       </el-form-item>
     </el-form>
-    <!--  底部  -->
-    <div class="el-register-footer">
-      <span>Copyright © 2017-2023 ichengle.top 技术支持：18015578617,微信同号.</span>
-    </div>
   </div>
 </template>
 

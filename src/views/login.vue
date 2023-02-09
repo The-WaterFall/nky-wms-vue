@@ -38,7 +38,8 @@
         </div>
       </el-form-item>
       <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
-      <el-form-item style="width:100%;">
+      <el-form-item style="width:100%;
+       text-align: center;">
         <el-button
           :loading="loading"
           size="medium"
@@ -49,39 +50,8 @@
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
         </el-button>
-        <el-button
-          :loading="loading"
-          size="medium"
-          type="primary"
-          style="width:45%;"
-          @click.native.prevent="handleTry"
-        >
-          <span>获取体验账号</span>
-        </el-button>
-        <div style="float: right;" v-if="register">
-          <router-link class="link-type" :to="'/register'">立即注册</router-link>
-        </div>
       </el-form-item>
     </el-form>
-    <el-dialog
-      title="公众号二维码"
-      :visible.sync="dialogVisible"
-      :show-close="false"
-      :center="true"
-      width="30%">
-      <div style="text-align: center">
-        <span class="font-title-large"><span class="color-main font-extra-large">关注公众号</span>回复<span class="color-main font-extra-large">wms</span>获取体验账号</span>
-        <br>
-        <img src="https://oscimg.oschina.net/oscnet/up-619fe7e172f2fb6c9a1951ee66180267df8.jpg" width="160" height="160" style="margin-top: 10px">
-      </div>
-      <span slot="footer" class="dialog-footer">
-    <el-button type="primary" @click="dialogConfirm">确定</el-button>
-      </span>
-    </el-dialog>
-    <!--  底部  -->
-    <div class="el-login-footer">
-      <span>Copyright © 2017-2023 ichengle.top 技术支持：18015578617,微信同号.</span>
-    </div>
   </div>
 </template>
 
